@@ -1,0 +1,394 @@
+{
+	"id": "0af50ad6-b117-4a6f-a5ba-ead3b8fe9409",
+	"name": "Sample",
+	"timestamp": "2024-10-28T15:31:17.557Z",
+	"collection_id": "39138663-f9deac72-66fb-4bc1-8c4a-b069b3052b69",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-10-28T15:31:14.195Z",
+	"totalFail": 20,
+	"results": [
+		{
+			"id": "682a8965-001c-4aa7-ba67-49e9e74a5e8e",
+			"name": "Get a Single Member",
+			"url": "http://localhost:5002/api/members",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Status code name has string": false,
+				"Successful POST request": false,
+				"Response Body is valid": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response Body is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Status code name has string": false,
+					"Successful POST request": false,
+					"Response Body is valid": false
+				}
+			]
+		},
+		{
+			"id": "e412c405-beff-476a-9c24-9b20f36b28f6",
+			"name": "Get a Single Author",
+			"url": "http://localhost:5002/api/authors/2",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": false,
+				"Content-Type is present": true,
+				"Status code name has string": false,
+				"Response time is less than 200ms": true,
+				"Successful POST request": false,
+				"Response Body is valid": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response Body is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": false,
+					"Content-Type is present": true,
+					"Status code name has string": false,
+					"Response time is less than 200ms": true,
+					"Successful POST request": false,
+					"Response Body is valid": false
+				}
+			]
+		},
+		{
+			"id": "36c6af6d-f2bc-46b5-8a25-2715a5bf1c2e",
+			"name": "Delete a Member",
+			"url": "http://localhost:5002/api/members/40",
+			"time": 3,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dd5caafd-5acf-4577-b0b7-59eac7ac9022",
+			"name": "Update a Member Via PUT",
+			"url": "http://localhost:5002/api/members/4",
+			"time": 4,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4c28606c-372d-4dd3-a8e0-dfd3f594f8c6",
+			"name": "Update a Member Via PATCH",
+			"url": "http://localhost:5002/api/members/4",
+			"time": 4,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "61305663-47c5-401b-83b3-f5043abb8db6",
+			"name": "Create a new Member",
+			"url": "http://localhost:5002/api/members",
+			"time": 4,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Verify response JSON has an id property": false,
+				"Successful POST request": false,
+				"Schema is valid": false,
+				"Status code name has string": false
+			},
+			"testPassFailCounts": {
+				"Verify response JSON has an id property": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Schema is valid": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Verify response JSON has an id property": false,
+					"Successful POST request": false,
+					"Schema is valid": false,
+					"Status code name has string": false
+				}
+			]
+		},
+		{
+			"id": "390ae9e1-3a1d-4ee1-9523-840aaad0bb31",
+			"name": "Get All Female Members",
+			"url": "http://localhost:5002/api/members",
+			"time": 4,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body matches string": false,
+				"Body is correct": false,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body matches string": false,
+					"Body is correct": false,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "b49382e7-9378-434d-adad-88c76cbd575c",
+			"name": "Get All Female Authors",
+			"url": "http://localhost:5002/api/authors",
+			"time": 5,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Status code is 200": false,
+				"Your test name": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Status code is 200": false,
+					"Your test name": false,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "a4be1cc2-67bb-43f1-ae27-59bd5e0d4116",
+			"name": "Get Delayed Response",
+			"url": "http://localhost:5002/api/lag?delay=2000",
+			"time": 2009,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"Successful POST request": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				2009
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"Successful POST request": false,
+					"Body is correct": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2041,
+	"collection": {
+		"requests": [
+			{
+				"id": "682a8965-001c-4aa7-ba67-49e9e74a5e8e",
+				"method": "GET"
+			},
+			{
+				"id": "e412c405-beff-476a-9c24-9b20f36b28f6",
+				"method": "GET"
+			},
+			{
+				"id": "36c6af6d-f2bc-46b5-8a25-2715a5bf1c2e",
+				"method": "DELETE"
+			},
+			{
+				"id": "dd5caafd-5acf-4577-b0b7-59eac7ac9022",
+				"method": "PUT"
+			},
+			{
+				"id": "4c28606c-372d-4dd3-a8e0-dfd3f594f8c6",
+				"method": "PATCH"
+			},
+			{
+				"id": "61305663-47c5-401b-83b3-f5043abb8db6",
+				"method": "POST"
+			},
+			{
+				"id": "390ae9e1-3a1d-4ee1-9523-840aaad0bb31",
+				"method": "GET"
+			},
+			{
+				"id": "b49382e7-9378-434d-adad-88c76cbd575c",
+				"method": "GET"
+			},
+			{
+				"id": "a4be1cc2-67bb-43f1-ae27-59bd5e0d4116",
+				"method": "GET"
+			}
+		]
+	}
+}
